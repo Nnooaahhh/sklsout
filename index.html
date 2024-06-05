@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metronome and Decibel Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Metronome and Decibel Checker</h1>
+        
+        <div class="metronome">
+            <h2>Metronome</h2>
+            <label for="bpm">BPM: <span id="bpm-value">60</span></label>
+            <input type="range" id="bpm" min="40" max="240" value="60">
+            <button id="start-stop">Start</button>
+        </div>
+
+        <div class="decibel-checker">
+            <h2>Decibel Checker</h2>
+            <button id="start-db-check">Start Checking</button>
+            <p>Current Decibel Level: <span id="db-level">0</span> dB</p>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
